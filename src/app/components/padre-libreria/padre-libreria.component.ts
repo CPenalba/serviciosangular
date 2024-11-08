@@ -6,8 +6,8 @@ import { ServiceComics } from '../../services/service.comics';
   selector: 'app-padre-libreria',
   templateUrl: './padre-libreria.component.html',
   styleUrl: './padre-libreria.component.css',
-  //debemos inyectar un servicio para poder recuperarlo posteriormente en el constructor
-  providers: [ServiceComics],
+  // //debemos inyectar un servicio para poder recuperarlo posteriormente en el constructor
+  // providers: [ServiceComics],
 })
 export class PadreLibreriaComponent implements OnInit {
   @ViewChild('cajanombre') cajaNombre!: ElementRef;

@@ -10,6 +10,10 @@ import { MenuComponent } from './components/menu/menu.component';
 import { HomeComponent } from './components/home/home.component';
 import { PadreLibreriaComponent } from './components/padre-libreria/padre-libreria.component';
 import { HijoComicComponent } from './components/hijo-comic/hijo-comic.component';
+import { ServiceComics } from './services/service.comics';
+import { provideHttpClient } from '@angular/common/http';
+import { ServicePersonas } from './services/service.personas';
+import { PersonasapiComponent } from './components/personasapi/personasapi.component';
 
 @NgModule({
   declarations: [
@@ -18,9 +22,15 @@ import { HijoComicComponent } from './components/hijo-comic/hijo-comic.component
     HomeComponent,
     PadreLibreriaComponent,
     HijoComicComponent,
+    PersonasapiComponent,
   ],
   imports: [BrowserModule, routing, FormsModule],
-  providers: [appRoutingProvider],
+  providers: [
+    appRoutingProvider,
+    ServiceComics,
+    ServicePersonas,
+    provideHttpClient(),
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
