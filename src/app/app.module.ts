@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { appRoutingProvider, routing } from './app.routing';
 
@@ -18,7 +19,7 @@ import { HijoComicComponent } from './components/hijo-comic/hijo-comic.component
     PadreLibreriaComponent,
     HijoComicComponent,
   ],
-  imports: [BrowserModule, routing],
+  imports: [BrowserModule, routing, FormsModule],
   providers: [appRoutingProvider],
   bootstrap: [AppComponent],
 })
