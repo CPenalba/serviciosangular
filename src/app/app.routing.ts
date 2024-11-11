@@ -6,6 +6,7 @@ import { PadreLibreriaComponent } from './components/padre-libreria/padre-librer
 import { PersonasapiComponent } from './components/personasapi/personasapi.component';
 import { PersonasstandaloneComponent } from './components/personasstandalone/personasstandalone.component';
 import { CochesComponent } from './components/coches/coches.component';
+import { PlantillafuncionsimpleComponent } from './components/plantillafuncionsimple/plantillafuncionsimple.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -13,6 +14,7 @@ const appRoutes: Routes = [
   { path: 'personas', component: PersonasapiComponent },
   { path: 'perstandalone', component: PersonasstandaloneComponent },
   { path: 'coches', component: CochesComponent },
+  { path: 'plantilla', component: PlantillafuncionsimpleComponent },
 ];
 
 export const appRoutingProvider: any[] = [];

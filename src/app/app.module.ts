@@ -17,6 +17,8 @@ import { PersonasapiComponent } from './components/personasapi/personasapi.compo
 import { PersonasstandaloneComponent } from './components/personasstandalone/personasstandalone.component';
 import { ServiceCoches } from './services/service.coches';
 import { CochesComponent } from './components/coches/coches.component';
+import { PlantillafuncionsimpleComponent } from './components/plantillafuncionsimple/plantillafuncionsimple.component';
+import { ServicePlantilla } from './services/service.plantilla';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,7 @@ import { CochesComponent } from './components/coches/coches.component';
     HijoComicComponent,
     PersonasapiComponent,
     CochesComponent,
+    PlantillafuncionsimpleComponent,
   ],
   imports: [BrowserModule, routing, FormsModule, PersonasstandaloneComponent],
   providers: [
@@ -35,6 +38,7 @@ import { CochesComponent } from './components/coches/coches.component';
     ServicePersonas,
     provideHttpClient(),
     ServiceCoches,
+    ServicePlantilla,
   ],
   bootstrap: [AppComponent],
 })
