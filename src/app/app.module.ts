@@ -14,6 +14,7 @@ import { ServiceComics } from './services/service.comics';
 import { provideHttpClient } from '@angular/common/http';
 import { ServicePersonas } from './services/service.personas';
 import { PersonasapiComponent } from './components/personasapi/personasapi.component';
+import { PersonasstandaloneComponent } from './components/personasstandalone/personasstandalone.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { PersonasapiComponent } from './components/personasapi/personasapi.compo
     HijoComicComponent,
     PersonasapiComponent,
   ],
-  imports: [BrowserModule, routing, FormsModule],
+  imports: [BrowserModule, routing, FormsModule, PersonasstandaloneComponent],
   providers: [
     appRoutingProvider,
     ServiceComics,

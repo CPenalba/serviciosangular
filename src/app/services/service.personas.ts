@@ -14,4 +14,15 @@ export class ServicePersonas {
     //2)Devolver directamente la peticion para que sea el component quien se subscriba
     return this._http.get(urlApiPersonas);
   }
+
+  getPersonasPromesa(): Promise<any> {
+    let urlApiPersonas =
+      'https://servicioapipersonasmvcpgs.azurewebsites.net/api/personas';
+    let promise = new Promise((resolve) => {
+      this._http.get(urlApiPersonas).subscribe((response) => {
+        resolve(response);
+      });
+    });
+    return promise;
+  }
 }
