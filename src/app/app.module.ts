@@ -19,6 +19,7 @@ import { ServiceCoches } from './services/service.coches';
 import { CochesComponent } from './components/coches/coches.component';
 import { PlantillafuncionsimpleComponent } from './components/plantillafuncionsimple/plantillafuncionsimple.component';
 import { ServicePlantilla } from './services/service.plantilla';
+import { PlantillafuncionmultipleComponent } from './components/plantillafuncionmultiple/plantillafuncionmultiple.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { ServicePlantilla } from './services/service.plantilla';
     PersonasapiComponent,
     CochesComponent,
     PlantillafuncionsimpleComponent,
+    PlantillafuncionmultipleComponent,
   ],
   imports: [BrowserModule, routing, FormsModule, PersonasstandaloneComponent],
   providers: [

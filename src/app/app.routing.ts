@@ -7,6 +7,7 @@ import { PersonasapiComponent } from './components/personasapi/personasapi.compo
 import { PersonasstandaloneComponent } from './components/personasstandalone/personasstandalone.component';
 import { CochesComponent } from './components/coches/coches.component';
 import { PlantillafuncionsimpleComponent } from './components/plantillafuncionsimple/plantillafuncionsimple.component';
+import { PlantillafuncionmultipleComponent } from './components/plantillafuncionmultiple/plantillafuncionmultiple.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -15,6 +16,7 @@ const appRoutes: Routes = [
   { path: 'perstandalone', component: PersonasstandaloneComponent },
   { path: 'coches', component: CochesComponent },
   { path: 'plantilla', component: PlantillafuncionsimpleComponent },
+  { path: 'plantillamultiple', component: PlantillafuncionmultipleComponent },
 ];
 
 export const appRoutingProvider: any[] = [];

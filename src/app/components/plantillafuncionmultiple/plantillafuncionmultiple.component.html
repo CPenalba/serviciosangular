@@ -1,18 +1,23 @@
 <div>
-  <h1>Plantilla funciones simple</h1>
+  <h1>Plantilla funciones multiple</h1>
   <form #funcionesForm="ngForm">
-    <select name="selectfuncion" #selectfuncion class="form-control">
+    <select
+      name="selectfunciones"
+      #selectfunciones
+      class="form-control"
+      multiple
+    >
       @for (funcion of funciones; track funcion){
       <option value="{{ funcion }}">{{ funcion }}</option>
       }
     </select>
     <br />
-    <button (click)="mostrarPlantilla()" class="btn btn-info">
+    <button (click)="mostrarPlantilla()" class="btn btn-success">
       Mostrar plantilla
     </button>
   </form>
   <hr />
-  <table class="table table-bordered">
+  <table class="table table-primary">
     <thead>
       <tr>
         <th>Id empleado</th>

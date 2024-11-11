@@ -17,4 +17,18 @@ export class ServicePlantilla {
     let url = environment.urlApiPlantilla + request;
     return this._http.get(url);
   }
+
+  getPlantillaFunciones(funciones: Array<string>): Observable<any> {
+    //?funcion=ENFERMERA&funcion=ENFERMERO&funcion=INTERINO
+    let data = '';
+    for (var funcion of funciones) {
+      data += 'funcion=' + funcion + '&';
+    }
+    //funcion=ENFERMERA&funcion=ENFERMERO&funcion=INTERINO
+    //eliminamos & de la ultima posicion
+    data = data.substring(0, data.length - 1);
+    let request = 'api/plantilla/plantillafunciones?' + data;
+    let url = environment.urlApiPlantilla + request;
+    return this._http.get(url);
+  }
 }
