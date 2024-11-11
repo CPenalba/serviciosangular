@@ -15,6 +15,7 @@ import { provideHttpClient } from '@angular/common/http';
 import { ServicePersonas } from './services/service.personas';
 import { PersonasapiComponent } from './components/personasapi/personasapi.component';
 import { PersonasstandaloneComponent } from './components/personasstandalone/personasstandalone.component';
+import { ServiceCoches } from './services/service.coches';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { PersonasstandaloneComponent } from './components/personasstandalone/per
     ServiceComics,
     ServicePersonas,
     provideHttpClient(),
+    ServiceCoches,
   ],
   bootstrap: [AppComponent],
 })
