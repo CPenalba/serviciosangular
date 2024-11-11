@@ -1,7 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Global } from '../global';
+// import { Global } from '../global';
+import { environment } from '../../environments/environment';
 
 @Injectable()
 export class ServicePersonas {
@@ -9,7 +10,7 @@ export class ServicePersonas {
   constructor(private _http: HttpClient) {}
   getPersonas(): Observable<any> {
     let request = 'api/personas';
-    let url = Global.urlApiPersonas + request;
+    let url = environment.urlApiPersonas + request;
     //tenemos dos formas de realizar la funcionalidad de devolucion de datos
     //1)Igual que en vue, creando una promesa por encima de este metodo
     //2)Devolver directamente la peticion para que sea el component quien se subscriba
@@ -18,7 +19,7 @@ export class ServicePersonas {
 
   getPersonasPromesa(): Promise<any> {
     let request = 'api/personas';
-    let url = Global.urlApiPersonas + request;
+    let url = environment.urlApiPersonas + request;
     let promise = new Promise((resolve) => {
       this._http.get(url).subscribe((response) => {
         resolve(response);
