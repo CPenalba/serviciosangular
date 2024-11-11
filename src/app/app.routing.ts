@@ -5,12 +5,14 @@ import { HomeComponent } from './components/home/home.component';
 import { PadreLibreriaComponent } from './components/padre-libreria/padre-libreria.component';
 import { PersonasapiComponent } from './components/personasapi/personasapi.component';
 import { PersonasstandaloneComponent } from './components/personasstandalone/personasstandalone.component';
+import { CochesComponent } from './components/coches/coches.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'libreria', component: PadreLibreriaComponent },
   { path: 'personas', component: PersonasapiComponent },
   { path: 'perstandalone', component: PersonasstandaloneComponent },
+  { path: 'coches', component: CochesComponent },
 ];
 
 export const appRoutingProvider: any[] = [];

@@ -16,6 +16,7 @@ import { ServicePersonas } from './services/service.personas';
 import { PersonasapiComponent } from './components/personasapi/personasapi.component';
 import { PersonasstandaloneComponent } from './components/personasstandalone/personasstandalone.component';
 import { ServiceCoches } from './services/service.coches';
+import { CochesComponent } from './components/coches/coches.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ServiceCoches } from './services/service.coches';
     PadreLibreriaComponent,
     HijoComicComponent,
     PersonasapiComponent,
+    CochesComponent,
   ],
   imports: [BrowserModule, routing, FormsModule, PersonasstandaloneComponent],
   providers: [
